@@ -4,15 +4,24 @@
     <title>Grid</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+     .grid-container{
+    display: grid;
+    grid-template-areas: 
+   'leftNav leftNav header header header header'
+   'leftNav leftNav main main main main'
+    gap: 10px;
+     }
+    .first-item {grid-area: header;} 
+    .second-item {grid-area: leftNav;}
+    .third-item {grid-area: main;}
     </style>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="first-item">first</div>
-        <div class="second-item">second</div>
-        <div class="third-item">third</div>
+        <div class="first-item">first-item</div>
+        <div class="second-item">second-item</div>
+        <div class="third-item">third-item</div>
     </div>
 </body>
 
